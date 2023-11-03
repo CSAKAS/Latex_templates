@@ -1,0 +1,41 @@
+\documentclass[12pt, a4paper, twoside]{article}
+\usepackage{amsmath, amsthm, amssymb, bm, graphicx, hyperref, mathrsfs}
+
+\title{\textbf{Homework2}}
+\author{Song Chen, 20761129}
+\date{\today}
+\linespread{1.25}
+\newcounter{problemname}
+\newcounter{subproblem}[problemname] 
+\newenvironment{problem}{\stepcounter{problemname}\par\noindent\textsc{Problem \arabic{problemname}. }}{\par}
+\renewcommand{\thesubproblem}{\alph{subproblem}}
+\newenvironment{subproblem}{\stepcounter{subproblem}\par\noindent\textbf{\thesubproblem.}}{\par}
+\newenvironment{solution}{\par\noindent\textsc{Solution. }}{\\\par}
+\newenvironment{note}{\par\noindent\textsc{Note of Problem \arabic{problemname}. }}{\\\par}
+
+\begin{document}
+
+\maketitle
+
+\begin{problem}\end{problem}
+\begin{subproblem}
+False. Smaller training error does not guarantee smaller generalization error. A model can overfit the training data and perform poorly on new test data.
+\end{subproblem}
+
+\begin{subproblem}
+True. An overly complex model (high complexity) can overfit the data by memorizing noise and outliers, leading to poor generalization of new data. Simple models that avoid overfitting often perform better on new data.
+\end{subproblem}
+
+\begin{subproblem}
+ True. A fixed learning rate may cause gradient descent to oscillate overshoot or around the optima. Gradually decreasing the learning rate allows gradient descent slowly near optima to reach an optima.
+\end{subproblem}
+
+\begin{problem}\end{problem}
+\begin{subproblem}
+(2)  is not a possible growth function...
+
+\end{subproblem}
+
+\begin{problem}\end{problem}
+
+\end{document}
